@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fijación sobre Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FIJACIÓN SOBRE TEXTOS</h1>
+        <div id="info">
+            <p>Este ejercicio está formado por un texto presentado en dos columnas estilo periodístico y atravesados por líneas verticales. Debes centrar la mirada en las líneas verticales de cada columna mientras la deslizas hacia abajo como lo va indicando la placa visualizadora.</p>
+            <p>Las líneas verticales te indican las fijaciones que debes hacer para cada línea de texto.</p>
+            <p>Lo ideal es que disminuyas el número de fijaciones que realiza el ojo al leer y puedas percibir por cada línea de texto, y con un solo golpe de vista, tres o más palabras.</p>
+            <p>Este ejercicio te servirá para ampliar tu ángulo lector y así captar más palabras con una sola fijación.</p>
+            <p>Es bueno que trabajes comprensión lectora, por lo tanto intenta comprender sin realizar vocalización o subvocalización.</p>
+        </div>
+        <div id="controles" class="controls">
+            <label for="speed">Selecciona la velocidad (milisegundos por fijación):</label>
+            <input type="number" id="speed" value="300">
+            <button id="start-btn">Iniciar</button>
+        </div>
+        <div id="text-container" class="hidden">
+            <div id="column-left" class="column left-column hidden">
+                <p>En un lugar de la Mancha, de cuyo nombre no quiero acordarme,</p>
+                <p>no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero,</p>
+                <p>adarga antigua, rocín flaco y galgo corredor.</p>
+                <p>Una olla de algo más vaca que carnero,</p>
+                <p>salpicón las más noches, duelos y quebrantos los sábados,</p>
+                <p>lentejas los viernes, algún palomino de añadidura los domingos,</p>
+                <p>consumían las tres partes de su hacienda.</p>
+                <p>El resto della concluían sayo de velarte,</p>
+                <p>calzas de velludo para las fiestas,</p>
+                <p>con sus pantuflos de lo mismo,</p>
+                <p>y los días de entresemana se honraba con su vellorí de lo más fino.</p>
+                <p>Tenía en su casa una ama que pasaba de los cuarenta,</p>
+                <p>y una sobrina que no llegaba a los veinte,</p>
+                <p>y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera.</p>
+            </div>
+            <div id="column-right" class="column right-column hidden">
+                <p>Frisaba la edad de nuestro hidalgo con los cincuenta años;</p>
+                <p>era de complexión recia, seco de carnes, enjuto de rostro;</p>
+                <p>gran madrugador y amigo de la caza.</p>
+                <p>Quieren decir que tenía el sobrenombre de Quijada o Quesada,</p>
+                <p>que en esto hay alguna diferencia en los autores que deste caso escriben,</p>
+                <p>aunque por conjeturas verosímiles se deja entender que se llamaba Quejana.</p>
+                <p>Pero esto importa poco a nuestro cuento; basta que en la narración dél no se salga un punto de la verdad.</p>
+                <p>Es, pues, de saber que este sobredicho hidalgo, los ratos que estaba ocioso,</p>
+                <p>(que eran los más del año) se daba a leer libros de caballerías</p>
+                <p>con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza,</p>
+                <p>y aun la administración de su hacienda;</p>
+                <p>y llegó a tanto su curiosidad y desatino en esto,</p>
+                <p>que vendió muchas hanegas de tierra de sembradura para comprar libros de caballerías en que leer,</p>
+                <p>y así llevó a su casa todos cuantos pudo haber dellos.</p>
+            </div>
+            <!-- Dos líneas verticales en cada columna -->
+            <div id="line1" class="vertical-line left-line1 hidden"></div>
+            <div id="line2" class="vertical-line left-line2 hidden"></div>
+            <div id="line3" class="vertical-line right-line1 hidden" ></div>
+            <div id="line4" class="vertical-line right-line2 hidden"></div>
+        </div>
+        <div id="timer" class="hidden">Tiempo: 3:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
